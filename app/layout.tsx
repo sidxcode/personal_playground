@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import NavTabs from "../components/NavTabs";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,7 +34,26 @@ export default function RootLayout({
           href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap"
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-white">
+        <header className="bg-white px-4 pb-4 pt-3 text-[#1a1a1a]">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="h-9 w-9 rounded-md bg-[#c8c8c8]" />
+              <p className="text-[14px] font-medium">Siddharth Borman</p>
+            </div>
+            <div className="flex items-center gap-4 text-lg">
+              <button
+                type="button"
+                className="h-fit w-fit rounded-md bg-black px-4 py-2 text-sm font-medium text-white"
+              >
+                Contact
+              </button>
+            </div>
+          </div>
+        </header>
+        <NavTabs />
+        {children}
+      </body>
     </html>
   );
 }
