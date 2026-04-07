@@ -2,64 +2,56 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen w-full bg-[#f7f7fb]">
+      {/* dotted grid background */}
+      <div className="relative mx-auto flex min-h-screen max-w-5xl items-center justify-center px-4 py-10 sm:px-8 lg:px-12">
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_1px_1px,#d4d4d8_1px,transparent_0)] bg-[length:24px_24px]" />
+
+        <div className="grid w-full gap-8 lg:grid-cols-[minmax(0,260px),minmax(0,1fr)] lg:items-start">
+          {/* left info card */}
+          <section className="flex justify-center lg:justify-start">
+            <div className="h-fit w-full max-w-[400px] rounded-none bg-white/95 p-5 font-general-sans shadow-none">
+              <div className="mb-3 flex items-center gap-2 text-base leading-4 font-medium text-[rgba(33,33,33,1)]">
+                <span>Siddharth Borman</span>
+              </div>
+
+              <p className="mb-2 text-base text-[rgba(105,105,105,1)]">12:53:03 PM</p>
+
+              <p className="mb-3 text-base leading-5 text-[rgba(105,105,105,1)]">
+                Product designer from <span className="font-semibold">Assam</span>, building web and
+                mobile experiences for startups and global brands for{" "}
+                <span className="font-semibold">2+ years</span> now.
+              </p>
+
+              <p className="mb-3 text-base leading-5 text-[rgba(105,105,105,1)]">
+                Currently helping out at{" "}
+                <span className="font-semibold text-zinc-900">studiocanine</span>.
+              </p>
+
+              <p className="mb-3 text-base leading-5 text-[rgba(105,105,105,1)]">
+                I love making things for the internet.
+                <br />
+                find out more about me{" "}
+                <span className="underline underline-offset-2">here</span>.
+              </p>
+
+              <p className="text-base leading-5 text-[rgba(105,105,105,1)]">
+                Reach me at{" "}
+                <a
+                  href="mailto:siddharth002b@gmail.com"
+                  className="font-medium underline underline-offset-2"
+                >
+                  siddharth002b@gmail.com
+                </a>
+              </p>
+            </div>
+          </section>
+
+          {/* right main content */}
+          <section className="space-y-6">
+          </section>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
     </div>
   );
 }
