@@ -4,14 +4,14 @@ const tabs = [
   { label: "work", href: "/" },
   { label: "lately", href: "/lately" },
   { label: "playground", href: "/playground" },
-  { label: "about me", href: "/about-me" },
+  { label: "about", href: "/about-me" },
 ];
 
 export default function NavTabs() {
   return (
-    <nav className="fixed inset-x-0 top-0 z-50">
-      <div className="mx-auto flex h-fit max-w-5xl flex-col gap-2 pt-5 pb-0 text-[#1a1a1a] md:flex-row md:items-center md:justify-between md:gap-0">
-        <div className="w-full text-center md:w-auto md:text-left">
+    <nav className="fixed inset-x-0 top-0 z-50 lg:inset-x-auto lg:inset-y-0 lg:left-0">
+      <div className="mx-auto flex h-fit max-w-5xl flex-col gap-2 pt-5 pb-0 text-[#1a1a1a] lg:h-full lg:justify-start lg:gap-6 lg:px-5 lg:pt-8">
+        <div className="w-full text-center lg:w-auto lg:text-left">
           <Link
             href="/"
             className="font-[var(--font-geist-sans)] text-[18px] font-medium tracking-tight hover:opacity-70"
@@ -19,8 +19,8 @@ export default function NavTabs() {
             SIDDHARTH
           </Link>
         </div>
-        <div className="w-full md:w-auto">
-          <ul className="flex flex-row items-center justify-between gap-2 px-5 text-[18px] font-medium md:justify-end">
+        <div className="w-full lg:w-auto">
+          <ul className="flex flex-row items-center justify-between gap-2 px-5 text-[18px] font-medium lg:flex-col lg:items-start lg:justify-start lg:px-0">
             {tabs.map((tab) => (
               <li key={tab.href}>
                 <Link
