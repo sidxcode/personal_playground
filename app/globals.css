@@ -9,7 +9,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-general-sans: "General Sans";
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-alegreya), var(--font-geist-sans);
+  --font-serif: var(--font-alegreya);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -23,6 +24,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-general-sans), var(--font-geist-sans), system-ui,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-alegreya), var(--font-general-sans),
+    var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", serif;
 }
