@@ -52,7 +52,9 @@ export default function Home() {
         {/* Left: bio */}
         <div className="w-full md:w-[380px]">
           <div className="mb-6 text-[#2a2a2a]">
-            <p className="text-[18px]">designer, tinkerer, artist</p>
+            <p className="text-[24px] font-mono font-bold">DESIGNER</p>
+            <p className="text-[24px] font-mono font-bold">TINKERER</p>
+            <p className="text-[24px] font-mono font-bold">ARTIST</p>
             <p className="text-[18px]">currently product design @studiocanine</p>
           </div>
           <div className="mb-4 text-[#2a2a2a]">
