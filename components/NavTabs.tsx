@@ -21,7 +21,7 @@ export default function NavTabs() {
         >
           SIDDHARTH
         </Link>
-        <ul className="flex flex-row items-center gap-2 text-[13px] font-semibold">
+        <ul className="flex flex-row items-center gap-2 text-[14px] font-bold">
           {tabs.map((tab) => (
             <li key={tab.href}>
               <Link
@@ -40,14 +40,14 @@ export default function NavTabs() {
       </div>
 
       {/* Desktop: vertical sidebar */}
-      <div className="hidden lg:flex lg:h-full lg:flex-col lg:gap-6 px-4 py-6">
+      <div className="hidden lg:flex lg:h-full lg:flex-col lg:gap-[40px] px-4 py-6">
         <Link
           href="/"
           className="text-[#e8380d] text-[18px] font-mono hover:opacity-70 tracking-[-0.12em]"
         >
           SIDDHARTH
         </Link>
-        <ul className="flex flex-col items-start gap-2 text-[15px] font-semibold">
+        <ul className="flex flex-col items-start gap-2 text-[16px] font-bold">
           {tabs.map((tab) => (
             <li key={tab.href} className="flex items-center gap-2">
               <Link
